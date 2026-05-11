@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ procedimento.nome }} | Infodonto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="{{ url_for('index') }}" aria-label="Página inicial do Infodonto">
+    <span class="brand-mark">I</span>
+    <span class="brand-name">Infodonto</span>
+  </a>
+  <span class="academic-badge">Uso Interno — Acadêmico</span>
+</header>
+
+<main class="shell">
+
+  <nav class="breadcrumb" aria-label="Navegação estrutural">
+    <a href="{{ url_for('index') }}">Início</a>
+    <span>/</span>
+    <a href="{{ url_for('especialidade', especialidade_id=especialidade.id) }}">{{ especialidade.nome }}</a>
+    <span>/</span>
+    <span>{{ procedimento.nome }}</span>
+  </nav>
+
+  <section class="page-intro">
+    <div class="intro-copy">
+      <span class="eyebrow">{{ especialidade.nome }}</span>
+      <h1>{{ procedimento.nome }}</h1>
+      <p class="intro-lead">{{ procedimento.resumo }}</p>
+    </div>
+    <div class="intro-stats" aria-label="Resumo de orientação">
+      <div>
+        <strong>{{ procedimento.complicacoes|length }}</strong>
+        <span>complicações mapeadas</span>
+      </div>
+      <div>
+        <strong>{{ procedimento.cronograma|length }}</strong>
+        <span>etapas de recuperação</span>
+      </div>
+      <div>
+        <strong>{{ procedimento.alertas|length }}</strong>
+        <span>sinais de alerta</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="detail-layout">
+
+    <section class="detail-main">
+      <div class="tab-bar" role="tablist" aria-label="Conteúdo do procedimento">
+        <button class="tab-button is-active" type="button" role="tab"
+                aria-selected="true" aria-controls="tab-complicacoes"
+                data-tab="complicacoes">Complicações</button>
+        <button class="tab-button" type="button" role="tab"
+                aria-selected="false" aria-controls="tab-evolucao"
+                data-tab="evolucao">Evolução Normal</button>
+        <button class="tab-button" type="button" role="tab"
+                aria-selected="false" aria-controls="tab-cuidados"
+                data-tab="cuidados">Cuidados</button>
+      </div>
+
+      <div class="tab-panel is-active" id="tab-complicacoes" role="tabpanel" data-tab-panel="complicacoes">
+        {% for complicacao in procedimento.complicacoes %}
+          <article class="severity-card severity-{{ complicacao.severidade }}">
+            <div>
+              <span class="severity-badge">{{ complicacao.severidade }}</span>
+              <h2>{{ complicacao.titulo }}</h2>
+            </div>
+            <p>{{ complicacao.descricao }}</p>
+          </article>
+        {% endfor %}
+      </div>
+
+      <div class="tab-panel" id="tab-evolucao" role="tabpanel" data-tab-panel="evolucao">
+        <ul class="timeline-list">
+          {% for item in procedimento.evolucao %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="tab-cuidados" role="tabpanel" data-tab-panel="cuidados">
+        <ul class="care-list">
+          {% for item in procedimento.cuidados %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <aside class="recovery-sidebar">
+      <section class="side-section alert-section">
+        <h2>Quando buscar atendimento</h2>
+        <ul>
+          {% for alerta in procedimento.alertas %}
+            <li>{{ alerta }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="side-section">
+        <h2>Cronograma de recuperação</h2>
+        <div class="recovery-steps">
+          {% for etapa in procedimento.cronograma %}
+            <div class="recovery-step">
+              <strong>{{ etapa.periodo }}</strong>
+              <p>{{ etapa.orientacao }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    </aside>
+
+  </div>
+</main>
+
+<button class="assistant-button" type="button" data-chat-open>
+  Assistente Virtual
+</button>
+
+<dialog class="chat-dialog" data-chat-dialog>
+  <div class="chat-box">
+    <div class="chat-head">
+      <strong>Assistente Virtual</strong>
+      <button type="button" aria-label="Fechar" data-chat-close>×</button>
+    </div>
+    <div class="chat-messages" data-chat-messages>
+      <div class="chat-message assistant">
+        Posso responder dúvidas sobre {{ procedimento.nome }} com base nas orientações desta página.
+      </div>
+    </div>
+    <div class="chat-form-wrap">
+      <input type="hidden" data-procedimento-id value="{{ procedimento.id }}">
+      <label class="sr-only" for="chat-message">Mensagem</label>
+      <textarea id="chat-message" data-chat-input rows="2" placeholder="Digite sua dúvida..."></textarea>
+      <button type="button" data-chat-send>Enviar</button>
+    </div>
+    <p class="chat-disclaimer">O assistente não substitui avaliação profissional.</p>
+  </div>
+</dialog>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

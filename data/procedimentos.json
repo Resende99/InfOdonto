@@ -1,0 +1,992 @@
+{
+  "especialidades": [
+    {
+      "id": "implantodontia",
+      "nome": "Implantodontia",
+      "descricao": "Orientações para recuperação após cirurgias e etapas protéticas com implantes dentários.",
+      "procedimentos": [
+        {
+          "id": "instalacao-de-implante",
+          "nome": "Instalação de Implante",
+          "resumo": "Cuidados após inserção cirúrgica de implante dentário.",
+          "complicacoes": [
+            {
+              "titulo": "Dor e edema local",
+              "severidade": "leve",
+              "descricao": "Desconforto, inchaço e sensibilidade são comuns nos primeiros dias e tendem a reduzir gradualmente."
+            },
+            {
+              "titulo": "Sangramento persistente",
+              "severidade": "moderado",
+              "descricao": "Pequeno sangramento é esperado no início. Sangramento contínuo exige compressão com gaze e observação."
+            },
+            {
+              "titulo": "Febre, pus ou piora progressiva",
+              "severidade": "atenção",
+              "descricao": "Sinais de infecção ou piora após melhora inicial precisam de avaliação profissional."
+            }
+          ],
+          "evolucao": [
+            "Primeiras 24 horas com maior sensibilidade e possível sangramento discreto.",
+            "Entre 2 e 4 dias, o edema pode atingir pico e começar a regredir.",
+            "Após 7 dias, a maioria dos sintomas deve estar mais controlada.",
+            "A osseointegração ocorre ao longo de semanas ou meses, conforme o caso."
+          ],
+          "cuidados": [
+            "Manter repouso relativo nas primeiras 24 a 48 horas.",
+            "Usar medicações conforme prescrição profissional.",
+            "Evitar bochechos vigorosos, cuspir repetidamente e esforço físico inicial.",
+            "Preferir alimentação fria ou morna e macia nos primeiros dias.",
+            "Não fumar durante a cicatrização."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-24h",
+              "orientacao": "Compressa fria, repouso e controle de sangramento."
+            },
+            {
+              "periodo": "2-4 dias",
+              "orientacao": "Acompanhar edema, manter higiene delicada e dieta macia."
+            },
+            {
+              "periodo": "7-14 dias",
+              "orientacao": "Retorno para avaliação e remoção de sutura, se indicada."
+            }
+          ],
+          "alertas": [
+            "Sangramento que não melhora com compressão.",
+            "Dor intensa que aumenta com o passar dos dias.",
+            "Febre, secreção purulenta ou mau odor persistente.",
+            "Mobilidade do implante ou trauma na região."
+          ]
+        },
+        {
+          "id": "reabertura-e-cicatrizador",
+          "nome": "Reabertura e Cicatrizador",
+          "resumo": "Orientações após exposição do implante e instalação do cicatrizador.",
+          "complicacoes": [
+            {
+              "titulo": "Sensibilidade gengival",
+              "severidade": "leve",
+              "descricao": "Leve incômodo ao redor do cicatrizador é esperado nos primeiros dias."
+            },
+            {
+              "titulo": "Inflamação local",
+              "severidade": "moderado",
+              "descricao": "Vermelhidão, aumento de inchaço ou dor devem ser monitorados."
+            },
+            {
+              "titulo": "Soltura do cicatrizador",
+              "severidade": "atenção",
+              "descricao": "Se o componente soltar, não tente recolocar sozinho; procure atendimento."
+            }
+          ],
+          "evolucao": [
+            "Recuperação costuma ser mais rápida que a cirurgia de instalação.",
+            "Pequeno sangramento pode ocorrer no primeiro dia.",
+            "A gengiva se adapta ao formato do cicatrizador ao longo de dias."
+          ],
+          "cuidados": [
+            "Evitar mastigar diretamente sobre a área no início.",
+            "Higienizar com delicadeza ao redor do cicatrizador.",
+            "Não manipular o componente com dedos ou língua.",
+            "Seguir as orientações de retorno para etapa protética."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-24h",
+              "orientacao": "Controlar sangramento discreto e evitar trauma local."
+            },
+            {
+              "periodo": "2-7 dias",
+              "orientacao": "Manter higiene cuidadosa e observar adaptação gengival."
+            },
+            {
+              "periodo": "2-4 semanas",
+              "orientacao": "Avaliação para continuidade da reabilitação protética."
+            }
+          ],
+          "alertas": [
+            "Cicatrizador frouxo ou ausente.",
+            "Dor forte, pus ou aumento importante de edema.",
+            "Sangramento persistente."
+          ]
+        },
+        {
+          "id": "implante-com-carga-imediata",
+          "nome": "Implante com Carga Imediata",
+          "resumo": "Cuidados com implante que recebe prótese provisória em curto prazo.",
+          "complicacoes": [
+            {
+              "titulo": "Desconforto mastigatório",
+              "severidade": "leve",
+              "descricao": "Sensação de adaptação à prótese provisória pode ocorrer no começo."
+            },
+            {
+              "titulo": "Afrouxamento da prótese",
+              "severidade": "moderado",
+              "descricao": "Qualquer mobilidade da prótese provisória deve ser comunicada."
+            },
+            {
+              "titulo": "Sobrecarga ou mobilidade do implante",
+              "severidade": "atenção",
+              "descricao": "Dor ao morder, mobilidade ou trauma podem comprometer a estabilidade inicial."
+            }
+          ],
+          "evolucao": [
+            "O implante precisa permanecer protegido de forças excessivas.",
+            "A prótese provisória é estética e funcional com restrições.",
+            "A estabilidade deve ser acompanhada durante a osseointegração."
+          ],
+          "cuidados": [
+            "Manter dieta macia pelo período orientado.",
+            "Evitar morder alimentos duros com a prótese provisória.",
+            "Não testar a estabilidade com os dedos ou língua.",
+            "Comparecer aos retornos programados."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-7 dias",
+              "orientacao": "Repouso, dieta macia e controle de sintomas cirúrgicos."
+            },
+            {
+              "periodo": "2-8 semanas",
+              "orientacao": "Evitar sobrecarga e acompanhar adaptação da prótese."
+            },
+            {
+              "periodo": "Após integração",
+              "orientacao": "Planejamento da prótese definitiva conforme avaliação."
+            }
+          ],
+          "alertas": [
+            "Prótese solta ou fraturada.",
+            "Dor ao tocar os dentes ou mastigar.",
+            "Mobilidade, febre ou secreção."
+          ]
+        },
+        {
+          "id": "enxerto-osseo",
+          "nome": "Enxerto Ósseo",
+          "resumo": "Orientações para cicatrização após procedimento de reconstrução óssea.",
+          "complicacoes": [
+            {
+              "titulo": "Edema e equimose",
+              "severidade": "leve",
+              "descricao": "Inchaço e manchas arroxeadas podem ocorrer, principalmente em cirurgias maiores."
+            },
+            {
+              "titulo": "Exposição de sutura ou membrana",
+              "severidade": "moderado",
+              "descricao": "Alterações visíveis na ferida cirúrgica precisam ser avaliadas."
+            },
+            {
+              "titulo": "Infecção ou perda do enxerto",
+              "severidade": "atenção",
+              "descricao": "Dor crescente, pus, febre ou abertura da ferida são sinais importantes."
+            }
+          ],
+          "evolucao": [
+            "O edema pode ser mais intenso nos primeiros dias.",
+            "A cicatrização de tecidos moles ocorre antes da maturação óssea.",
+            "A integração do enxerto exige acompanhamento em médio prazo."
+          ],
+          "cuidados": [
+            "Evitar pressão, trauma ou próteses removíveis sem liberação.",
+            "Não fumar.",
+            "Fazer higiene oral delicada conforme orientação.",
+            "Respeitar repouso e medicações prescritas."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-72h",
+              "orientacao": "Controle de edema, repouso e dieta fria ou morna."
+            },
+            {
+              "periodo": "7-14 dias",
+              "orientacao": "Revisão clínica e avaliação da ferida."
+            },
+            {
+              "periodo": "3-9 meses",
+              "orientacao": "Maturação do enxerto conforme extensão do caso."
+            }
+          ],
+          "alertas": [
+            "Abertura da ferida cirúrgica.",
+            "Exposição de material de enxerto.",
+            "Febre, pus ou dor progressiva.",
+            "Sangramento persistente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "harmonizacao-orofacial",
+      "nome": "Harmonização Orofacial",
+      "descricao": "Cuidados após procedimentos estéticos e funcionais da face.",
+      "procedimentos": [
+        {
+          "id": "toxina-botulinica",
+          "nome": "Toxina Botulínica",
+          "resumo": "Orientações após aplicação de toxina botulínica.",
+          "complicacoes": [
+            {
+              "titulo": "Pontos doloridos ou pequenos hematomas",
+              "severidade": "leve",
+              "descricao": "Sensibilidade e marcas discretas nos locais de aplicação podem ocorrer."
+            },
+            {
+              "titulo": "Assimetria transitória",
+              "severidade": "moderado",
+              "descricao": "Diferenças sutis podem aparecer durante o início do efeito e devem ser reavaliadas."
+            },
+            {
+              "titulo": "Alteração funcional importante",
+              "severidade": "atenção",
+              "descricao": "Dificuldade para falar, engolir ou fechar os olhos exige contato imediato."
+            }
+          ],
+          "evolucao": [
+            "O efeito não é imediato.",
+            "Os primeiros sinais costumam surgir em poucos dias.",
+            "O resultado se estabiliza em cerca de 14 dias."
+          ],
+          "cuidados": [
+            "Não massagear os pontos de aplicação nas primeiras horas.",
+            "Evitar deitar logo após o procedimento pelo tempo orientado.",
+            "Evitar exercício intenso no primeiro dia.",
+            "Retornar para avaliação quando solicitado."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-24h",
+              "orientacao": "Evitar pressão local e atividade física intensa."
+            },
+            {
+              "periodo": "3-7 dias",
+              "orientacao": "Início gradual do efeito."
+            },
+            {
+              "periodo": "14 dias",
+              "orientacao": "Avaliação de resultado e necessidade de ajuste."
+            }
+          ],
+          "alertas": [
+            "Dificuldade para engolir ou respirar.",
+            "Queda palpebral intensa.",
+            "Dor forte, alergia ou inchaço progressivo."
+          ]
+        },
+        {
+          "id": "preenchimento-acido-hialuronico",
+          "nome": "Preenchimento com Ácido Hialurônico",
+          "resumo": "Cuidados após preenchimento facial com ácido hialurônico.",
+          "complicacoes": [
+            {
+              "titulo": "Edema e sensibilidade",
+              "severidade": "leve",
+              "descricao": "Inchaço, sensibilidade e pequenos hematomas podem ocorrer nos primeiros dias."
+            },
+            {
+              "titulo": "Nódulos ou assimetria",
+              "severidade": "moderado",
+              "descricao": "Irregularidades iniciais podem ser edema, mas devem ser acompanhadas."
+            },
+            {
+              "titulo": "Dor intensa ou mudança de cor da pele",
+              "severidade": "atenção",
+              "descricao": "Palidez, manchas arroxeadas progressivas ou dor desproporcional exigem atendimento imediato."
+            }
+          ],
+          "evolucao": [
+            "O inchaço inicial reduz gradualmente.",
+            "Hematomas podem mudar de cor antes de desaparecer.",
+            "O resultado final deve ser avaliado após acomodação do produto."
+          ],
+          "cuidados": [
+            "Evitar massagear a região sem orientação.",
+            "Não se expor a calor intenso no início.",
+            "Evitar exercício intenso nas primeiras 24 horas.",
+            "Manter hidratação e observar mudanças na pele."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-48h",
+              "orientacao": "Maior edema e sensibilidade."
+            },
+            {
+              "periodo": "3-7 dias",
+              "orientacao": "Redução progressiva de hematomas e inchaço."
+            },
+            {
+              "periodo": "14-30 dias",
+              "orientacao": "Avaliação de acomodação e simetria."
+            }
+          ],
+          "alertas": [
+            "Dor forte e localizada.",
+            "Pele pálida, fria, escura ou com manchas em progressão.",
+            "Alteração visual.",
+            "Inchaço importante ou sinais de alergia."
+          ]
+        },
+        {
+          "id": "bichectomia",
+          "nome": "Bichectomia",
+          "resumo": "Cuidados após remoção cirúrgica parcial da bola de Bichat.",
+          "complicacoes": [
+            {
+              "titulo": "Inchaço facial",
+              "severidade": "leve",
+              "descricao": "Edema bilateral pode ocorrer e tende a regredir ao longo dos dias."
+            },
+            {
+              "titulo": "Limitação de abertura bucal",
+              "severidade": "moderado",
+              "descricao": "Dificuldade temporária de abrir a boca pode acontecer por inflamação local."
+            },
+            {
+              "titulo": "Infecção ou sangramento intenso",
+              "severidade": "atenção",
+              "descricao": "Febre, secreção, dor crescente ou sangramento importante precisam de avaliação."
+            }
+          ],
+          "evolucao": [
+            "O edema costuma ser maior nos primeiros dias.",
+            "A mucosa interna cicatriza gradualmente.",
+            "A definição facial aparece após redução do inchaço."
+          ],
+          "cuidados": [
+            "Seguir dieta macia e higiene oral orientada.",
+            "Evitar esforço físico no período inicial.",
+            "Não manipular a área interna da bochecha.",
+            "Usar medicações conforme prescrição."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-72h",
+              "orientacao": "Controle de edema e alimentação macia."
+            },
+            {
+              "periodo": "7-14 dias",
+              "orientacao": "Cicatrização inicial da mucosa."
+            },
+            {
+              "periodo": "1-3 meses",
+              "orientacao": "Redução progressiva do edema residual."
+            }
+          ],
+          "alertas": [
+            "Assimetria súbita importante.",
+            "Sangramento persistente.",
+            "Febre, pus ou mau odor.",
+            "Dormência intensa ou alteração funcional."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endodontia",
+      "nome": "Endodontia",
+      "descricao": "Orientações após tratamento de canal e procedimentos relacionados à raiz dentária.",
+      "procedimentos": [
+        {
+          "id": "tratamento-canal-radicular",
+          "nome": "Tratamento de Canal Radicular",
+          "resumo": "Cuidados após limpeza, modelagem e obturação do canal radicular.",
+          "complicacoes": [
+            {
+              "titulo": "Sensibilidade ao mastigar",
+              "severidade": "leve",
+              "descricao": "Incômodo leve a moderado ao tocar o dente pode acontecer por alguns dias."
+            },
+            {
+              "titulo": "Dor persistente",
+              "severidade": "moderado",
+              "descricao": "Dor que não melhora com medicação ou passa de vários dias deve ser reavaliada."
+            },
+            {
+              "titulo": "Inchaço facial ou abscesso",
+              "severidade": "atenção",
+              "descricao": "Aumento de volume, pus ou febre indicam necessidade de atendimento."
+            }
+          ],
+          "evolucao": [
+            "Sensibilidade pós-operatória é comum.",
+            "A restauração definitiva é importante para proteger o dente.",
+            "O reparo ósseo, quando necessário, pode levar meses."
+          ],
+          "cuidados": [
+            "Evitar mastigar alimentos duros sobre o dente tratado até restauração final.",
+            "Tomar medicações conforme prescrição.",
+            "Manter higiene oral regular.",
+            "Retornar para restauração definitiva ou acompanhamento radiográfico."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-72h",
+              "orientacao": "Sensibilidade ao toque pode ser mais perceptível."
+            },
+            {
+              "periodo": "1-2 semanas",
+              "orientacao": "Sintomas devem reduzir gradualmente."
+            },
+            {
+              "periodo": "Meses",
+              "orientacao": "Acompanhamento de reparo em casos com lesão."
+            }
+          ],
+          "alertas": [
+            "Inchaço na gengiva ou face.",
+            "Dor pulsátil intensa.",
+            "Febre ou gosto ruim persistente.",
+            "Fratura ou perda da restauração provisória."
+          ]
+        },
+        {
+          "id": "retratamento-endodontico",
+          "nome": "Retratamento Endodôntico",
+          "resumo": "Orientações após nova intervenção em canal previamente tratado.",
+          "complicacoes": [
+            {
+              "titulo": "Dor pós-operatória",
+              "severidade": "leve",
+              "descricao": "Sensibilidade temporária pode ocorrer pela manipulação de tecidos já tratados."
+            },
+            {
+              "titulo": "Exacerbação inflamatória",
+              "severidade": "moderado",
+              "descricao": "Dor e aumento de sensibilidade podem exigir ajuste ou acompanhamento."
+            },
+            {
+              "titulo": "Edema ou fístula ativa",
+              "severidade": "atenção",
+              "descricao": "Sinais de infecção ativa devem ser comunicados rapidamente."
+            }
+          ],
+          "evolucao": [
+            "A resposta pode variar conforme a infecção prévia.",
+            "A dor deve reduzir progressivamente.",
+            "A cicatrização radiográfica pode ser lenta."
+          ],
+          "cuidados": [
+            "Evitar mastigação intensa sobre o dente.",
+            "Proteger restaurações provisórias.",
+            "Seguir corretamente prescrições e retornos.",
+            "Finalizar a restauração indicada."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-7 dias",
+              "orientacao": "Controle de dor e observação de edema."
+            },
+            {
+              "periodo": "1-4 semanas",
+              "orientacao": "Reavaliação clínica conforme planejamento."
+            },
+            {
+              "periodo": "6-12 meses",
+              "orientacao": "Controle radiográfico quando indicado."
+            }
+          ],
+          "alertas": [
+            "Inchaço crescente.",
+            "Dor que impede sono ou alimentação.",
+            "Aparecimento de pus ou fístula.",
+            "Perda do curativo provisório."
+          ]
+        },
+        {
+          "id": "cirurgia-parendodontica-apicectomia",
+          "nome": "Cirurgia Parendodôntica (Apicectomia)",
+          "resumo": "Cuidados após cirurgia na região apical da raiz.",
+          "complicacoes": [
+            {
+              "titulo": "Edema localizado",
+              "severidade": "leve",
+              "descricao": "Inchaço e sensibilidade na gengiva são esperados no período inicial."
+            },
+            {
+              "titulo": "Deiscência de sutura",
+              "severidade": "moderado",
+              "descricao": "Abertura parcial da ferida ou incômodo persistente deve ser avaliado."
+            },
+            {
+              "titulo": "Infecção ou parestesia",
+              "severidade": "atenção",
+              "descricao": "Pus, febre, dormência ou dor intensa exigem atendimento."
+            }
+          ],
+          "evolucao": [
+            "O desconforto inicial costuma reduzir em poucos dias.",
+            "A gengiva cicatriza antes do reparo ósseo completo.",
+            "O acompanhamento radiográfico avalia a recuperação da lesão."
+          ],
+          "cuidados": [
+            "Evitar escovar diretamente a sutura no início.",
+            "Não puxar lábio ou bochecha para visualizar a cirurgia.",
+            "Manter repouso e alimentação macia.",
+            "Usar medicações conforme prescrição."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-72h",
+              "orientacao": "Controle de edema e sangramento discreto."
+            },
+            {
+              "periodo": "7-14 dias",
+              "orientacao": "Revisão e remoção de sutura, se indicada."
+            },
+            {
+              "periodo": "6-12 meses",
+              "orientacao": "Acompanhamento radiográfico de reparo."
+            }
+          ],
+          "alertas": [
+            "Sangramento persistente.",
+            "Dormência prolongada.",
+            "Febre, pus ou dor progressiva.",
+            "Abertura da ferida cirúrgica."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cirurgia-oral",
+      "nome": "Cirurgia Oral",
+      "descricao": "Cuidados pós-operatórios de extrações e pequenas cirurgias bucais.",
+      "procedimentos": [
+        {
+          "id": "exodontia-simples",
+          "nome": "Exodontia Simples",
+          "resumo": "Orientações após extração dentária simples.",
+          "complicacoes": [
+            {
+              "titulo": "Dor e sangramento discreto",
+              "severidade": "leve",
+              "descricao": "Desconforto e pequena saída de sangue são comuns no primeiro dia."
+            },
+            {
+              "titulo": "Alveolite",
+              "severidade": "moderado",
+              "descricao": "Dor forte alguns dias após a extração pode indicar alteração na cicatrização do alvéolo."
+            },
+            {
+              "titulo": "Sangramento intenso ou infecção",
+              "severidade": "atenção",
+              "descricao": "Sangramento contínuo, febre, pus ou inchaço progressivo exigem atendimento."
+            }
+          ],
+          "evolucao": [
+            "O coágulo inicial protege o alvéolo.",
+            "A dor deve diminuir gradualmente.",
+            "A gengiva fecha progressivamente nas semanas seguintes."
+          ],
+          "cuidados": [
+            "Morder gaze pelo tempo orientado.",
+            "Evitar cuspir, bochechar forte e usar canudo nas primeiras 24 horas.",
+            "Não fumar.",
+            "Manter alimentação macia e higiene cuidadosa."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-24h",
+              "orientacao": "Formação do coágulo e controle de sangramento."
+            },
+            {
+              "periodo": "2-7 dias",
+              "orientacao": "Redução gradual da dor."
+            },
+            {
+              "periodo": "2-4 semanas",
+              "orientacao": "Fechamento progressivo da gengiva."
+            }
+          ],
+          "alertas": [
+            "Sangramento que não cessa com compressão.",
+            "Dor intensa após 2 ou 3 dias.",
+            "Febre, pus ou odor forte.",
+            "Perda do coágulo com dor intensa."
+          ]
+        },
+        {
+          "id": "extracao-de-siso",
+          "nome": "Extração de Siso",
+          "resumo": "Orientações após remoção de terceiro molar.",
+          "complicacoes": [
+            {
+              "titulo": "Edema, trismo e hematoma",
+              "severidade": "leve",
+              "descricao": "Inchaço, dificuldade de abrir a boca e manchas podem ocorrer."
+            },
+            {
+              "titulo": "Alveolite ou inflamação persistente",
+              "severidade": "moderado",
+              "descricao": "Dor forte e gosto ruim alguns dias depois devem ser avaliados."
+            },
+            {
+              "titulo": "Parestesia ou infecção",
+              "severidade": "atenção",
+              "descricao": "Dormência persistente, febre, pus ou aumento de edema exigem atendimento."
+            }
+          ],
+          "evolucao": [
+            "O edema pode aumentar até 48 a 72 horas.",
+            "A abertura bucal melhora gradualmente.",
+            "A cicatrização completa depende da complexidade da cirurgia."
+          ],
+          "cuidados": [
+            "Repousar e aplicar compressa fria no início.",
+            "Evitar alimentos duros, quentes e com grãos pequenos.",
+            "Manter higiene sem traumatizar a área.",
+            "Seguir medicações e retornos."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-72h",
+              "orientacao": "Pico de edema e controle de dor."
+            },
+            {
+              "periodo": "7 dias",
+              "orientacao": "Revisão e remoção de sutura, se indicada."
+            },
+            {
+              "periodo": "2-6 semanas",
+              "orientacao": "Fechamento progressivo do alvéolo."
+            }
+          ],
+          "alertas": [
+            "Dormência prolongada em lábio, língua ou queixo.",
+            "Dor crescente após melhora inicial.",
+            "Febre, pus ou dificuldade para engolir.",
+            "Sangramento persistente."
+          ]
+        },
+        {
+          "id": "frenectomia",
+          "nome": "Frenectomia",
+          "resumo": "Cuidados após remoção ou reposicionamento de freio labial ou lingual.",
+          "complicacoes": [
+            {
+              "titulo": "Sensibilidade local",
+              "severidade": "leve",
+              "descricao": "Dor leve e sensação de repuxamento podem ocorrer."
+            },
+            {
+              "titulo": "Abertura parcial da ferida",
+              "severidade": "moderado",
+              "descricao": "Trauma ou tração excessiva pode interferir na cicatrização."
+            },
+            {
+              "titulo": "Sangramento ou infecção",
+              "severidade": "atenção",
+              "descricao": "Sangramento persistente, pus, febre ou dor intensa exigem avaliação."
+            }
+          ],
+          "evolucao": [
+            "A área pode ficar sensível ao falar, mastigar ou movimentar a língua.",
+            "O tecido cicatriza gradualmente.",
+            "Exercícios podem ser indicados conforme o tipo de frenectomia."
+          ],
+          "cuidados": [
+            "Evitar puxar lábio ou língua para olhar a ferida.",
+            "Manter higiene suave.",
+            "Evitar alimentos ácidos, duros ou muito quentes.",
+            "Seguir orientação sobre exercícios funcionais."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-48h",
+              "orientacao": "Controle de dor e sangramento discreto."
+            },
+            {
+              "periodo": "7-14 dias",
+              "orientacao": "Cicatrização inicial e revisão."
+            },
+            {
+              "periodo": "Semanas",
+              "orientacao": "Adaptação funcional, quando necessária."
+            }
+          ],
+          "alertas": [
+            "Sangramento persistente.",
+            "Abertura significativa da ferida.",
+            "Febre, pus ou mau odor.",
+            "Dificuldade funcional intensa."
+          ]
+        },
+        {
+          "id": "enucleacao-de-cisto",
+          "nome": "Enucleação de Cisto",
+          "resumo": "Orientações após remoção cirúrgica de cisto bucal.",
+          "complicacoes": [
+            {
+              "titulo": "Edema e dor local",
+              "severidade": "leve",
+              "descricao": "Inchaço e sensibilidade são esperados após manipulação cirúrgica."
+            },
+            {
+              "titulo": "Abertura de sutura",
+              "severidade": "moderado",
+              "descricao": "Abertura parcial ou desconforto persistente requer acompanhamento."
+            },
+            {
+              "titulo": "Infecção, sangramento ou parestesia",
+              "severidade": "atenção",
+              "descricao": "Sinais intensos ou progressivos devem ser avaliados."
+            }
+          ],
+          "evolucao": [
+            "A recuperação varia conforme tamanho e localização do cisto.",
+            "Pode haver cavidade óssea em reparo por semanas ou meses.",
+            "O laudo histopatológico pode orientar acompanhamento."
+          ],
+          "cuidados": [
+            "Manter repouso e dieta macia.",
+            "Evitar trauma na área operada.",
+            "Seguir medicações e retornos.",
+            "Aguardar orientação sobre resultado de exame, quando realizado."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-72h",
+              "orientacao": "Controle de sangramento, dor e edema."
+            },
+            {
+              "periodo": "7-14 dias",
+              "orientacao": "Revisão clínica da ferida."
+            },
+            {
+              "periodo": "Meses",
+              "orientacao": "Acompanhamento do reparo ósseo."
+            }
+          ],
+          "alertas": [
+            "Dormência persistente.",
+            "Sangramento importante.",
+            "Febre, pus ou aumento do inchaço.",
+            "Dor que piora após melhora inicial."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "periodontia",
+      "nome": "Periodontia",
+      "descricao": "Orientações relacionadas ao cuidado gengival e aos tecidos de suporte dos dentes.",
+      "procedimentos": [
+        {
+          "id": "raspagem-alisamento-radicular",
+          "nome": "Raspagem e Alisamento Radicular",
+          "resumo": "Cuidados após limpeza profunda das raízes dentárias.",
+          "complicacoes": [
+            {
+              "titulo": "Sensibilidade dentária",
+              "severidade": "leve",
+              "descricao": "Sensibilidade ao frio e ao toque pode ocorrer temporariamente."
+            },
+            {
+              "titulo": "Sangramento gengival persistente",
+              "severidade": "moderado",
+              "descricao": "Pequeno sangramento é comum, mas persistência deve ser acompanhada."
+            },
+            {
+              "titulo": "Abscesso periodontal",
+              "severidade": "atenção",
+              "descricao": "Dor localizada, pus ou inchaço gengival precisam de atendimento."
+            }
+          ],
+          "evolucao": [
+            "A gengiva pode ficar sensível nos primeiros dias.",
+            "Sangramento tende a reduzir com higiene adequada.",
+            "A resposta periodontal depende da manutenção de placa controlada."
+          ],
+          "cuidados": [
+            "Escovar e usar fio dental conforme orientação.",
+            "Evitar alimentos muito duros se houver sensibilidade.",
+            "Usar produtos dessensibilizantes quando indicados.",
+            "Comparecer às consultas de manutenção."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-7 dias",
+              "orientacao": "Sensibilidade e adaptação da higiene."
+            },
+            {
+              "periodo": "4-8 semanas",
+              "orientacao": "Reavaliação da resposta gengival."
+            },
+            {
+              "periodo": "3-6 meses",
+              "orientacao": "Manutenção periodontal conforme risco."
+            }
+          ],
+          "alertas": [
+            "Dor forte localizada.",
+            "Pus ou inchaço gengival.",
+            "Sangramento intenso.",
+            "Mobilidade dentária repentina."
+          ]
+        },
+        {
+          "id": "cirurgia-periodontal-retalho",
+          "nome": "Cirurgia Periodontal (Retalho)",
+          "resumo": "Orientações após cirurgia gengival com acesso aos tecidos periodontais.",
+          "complicacoes": [
+            {
+              "titulo": "Edema e desconforto gengival",
+              "severidade": "leve",
+              "descricao": "Inchaço e dor leve são comuns no começo."
+            },
+            {
+              "titulo": "Sangramento ou abertura de sutura",
+              "severidade": "moderado",
+              "descricao": "Sangramento prolongado ou soltura de sutura deve ser comunicado."
+            },
+            {
+              "titulo": "Infecção ou necrose tecidual",
+              "severidade": "atenção",
+              "descricao": "Dor intensa, pus, mau odor ou alteração de cor do tecido exigem avaliação."
+            }
+          ],
+          "evolucao": [
+            "A gengiva cicatriza progressivamente após a sutura.",
+            "Pode haver alteração temporária de sensibilidade.",
+            "A higiene controlada é decisiva para estabilidade do resultado."
+          ],
+          "cuidados": [
+            "Evitar escovar diretamente a área até liberação.",
+            "Usar enxaguatório se prescrito.",
+            "Não manipular suturas.",
+            "Evitar esforço físico e alimentos traumáticos no início."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-72h",
+              "orientacao": "Controle de edema e sangramento."
+            },
+            {
+              "periodo": "7-14 dias",
+              "orientacao": "Revisão e remoção de suturas."
+            },
+            {
+              "periodo": "4-8 semanas",
+              "orientacao": "Reavaliação periodontal."
+            }
+          ],
+          "alertas": [
+            "Sangramento que não cessa.",
+            "Sutura solta com abertura da ferida.",
+            "Febre, pus ou mau odor.",
+            "Dor progressiva."
+          ]
+        },
+        {
+          "id": "enxerto-gengival",
+          "nome": "Enxerto Gengival",
+          "resumo": "Cuidados após enxerto de tecido gengival.",
+          "complicacoes": [
+            {
+              "titulo": "Sensibilidade no local doador",
+              "severidade": "leve",
+              "descricao": "Quando há área doadora, ela pode ficar sensível durante a cicatrização."
+            },
+            {
+              "titulo": "Deslocamento do enxerto",
+              "severidade": "moderado",
+              "descricao": "Movimentação, trauma ou pressão podem prejudicar a adaptação do tecido."
+            },
+            {
+              "titulo": "Necrose ou perda do enxerto",
+              "severidade": "atenção",
+              "descricao": "Mudança importante de cor, mau odor, dor intensa ou soltura exigem atendimento."
+            }
+          ],
+          "evolucao": [
+            "A cor do enxerto pode variar durante a cicatrização.",
+            "A estabilidade depende de repouso local e ausência de trauma.",
+            "A maturação estética ocorre ao longo de semanas."
+          ],
+          "cuidados": [
+            "Não puxar lábio ou bochecha para observar o enxerto.",
+            "Evitar escovação direta até liberação.",
+            "Preferir alimentos macios e não traumáticos.",
+            "Não fumar."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-72h",
+              "orientacao": "Proteção do enxerto e controle de sangramento."
+            },
+            {
+              "periodo": "7-14 dias",
+              "orientacao": "Avaliação de integração inicial."
+            },
+            {
+              "periodo": "1-3 meses",
+              "orientacao": "Maturação de cor e contorno."
+            }
+          ],
+          "alertas": [
+            "Enxerto solto ou com alteração escura extensa.",
+            "Sangramento persistente no local doador.",
+            "Dor intensa ou pus.",
+            "Trauma acidental na área."
+          ]
+        },
+        {
+          "id": "manutencao-periodontal",
+          "nome": "Manutenção Periodontal",
+          "resumo": "Orientações após consulta de controle periodontal.",
+          "complicacoes": [
+            {
+              "titulo": "Sensibilidade temporária",
+              "severidade": "leve",
+              "descricao": "Sensibilidade após limpeza e instrumentação pode ocorrer."
+            },
+            {
+              "titulo": "Sangramento persistente",
+              "severidade": "moderado",
+              "descricao": "Sangramento ao escovar deve melhorar com higiene e controle."
+            },
+            {
+              "titulo": "Recidiva inflamatória",
+              "severidade": "atenção",
+              "descricao": "Inchaço, pus, mobilidade ou dor localizada sugerem agravamento periodontal."
+            }
+          ],
+          "evolucao": [
+            "A consulta ajuda a controlar placa e inflamação.",
+            "A gengiva pode ficar sensível por curto período.",
+            "A frequência de manutenção depende do risco individual."
+          ],
+          "cuidados": [
+            "Manter rotina diária de escovação e limpeza interdental.",
+            "Seguir recomendações de técnica e instrumentos.",
+            "Evitar tabagismo.",
+            "Retornar no intervalo programado."
+          ],
+          "cronograma": [
+            {
+              "periodo": "0-48h",
+              "orientacao": "Sensibilidade leve pode ocorrer."
+            },
+            {
+              "periodo": "Semanas",
+              "orientacao": "Manter controle rigoroso de placa."
+            },
+            {
+              "periodo": "3-6 meses",
+              "orientacao": "Nova manutenção conforme risco periodontal."
+            }
+          ],
+          "alertas": [
+            "Pus na gengiva.",
+            "Mobilidade dentária nova.",
+            "Dor localizada intensa.",
+            "Sangramento espontâneo frequente."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infodonto | Orientações pós-atendimento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="{{ url_for('index') }}" aria-label="Página inicial do Infodonto">
+    <span class="brand-mark">I</span>
+    <span class="brand-name">Infodonto</span>
+  </a>
+  <span class="academic-badge">Uso Interno — Acadêmico</span>
+</header>
+
+<main class="shell" data-index-page>
+
+  <nav class="breadcrumb" aria-label="Navegação estrutural">
+    <a href="{{ url_for('index') }}">Início</a>
+    {% if active_especialidade %}
+      <span>/</span>
+      <span>{{ active_especialidade.nome }}</span>
+    {% endif %}
+  </nav>
+
+  <section class="page-intro">
+    <div class="intro-copy">
+      <span class="eyebrow">Orientações pós-atendimento odontológico</span>
+      <h1>Um guia clínico para sua <em>recuperação.</em></h1>
+      <p class="intro-lead">Selecione a especialidade, abra o procedimento realizado e consulte cuidados, evolução esperada, complicações e sinais de alerta.</p>
+    </div>
+    <div class="intro-stats" aria-label="Resumo do portal">
+      <div><strong>5</strong><span>especialidades</span></div>
+      <div><strong>18</strong><span>procedimentos</span></div>
+      <div><strong>24h</strong><span>orientação inicial</span></div>
+    </div>
+  </section>
+
+  <div class="layout">
+
+    <aside class="specialty-nav" aria-label="Especialidades">
+      <span class="specialty-nav-label">Especialidades</span>
+      <div class="tabs-list">
+        {% for especialidade in especialidades %}
+          <a class="specialty-tab {% if active_especialidade and active_especialidade.id == especialidade.id %}is-active{% endif %}"
+             href="{{ url_for('especialidade', especialidade_id=especialidade.id) }}"
+             data-specialty-link="{{ especialidade.id }}">
+            <span class="tab-index">0{{ loop.index }}</span>
+            <span class="tab-name">{{ especialidade.nome }}</span>
+            <small>{{ especialidade.procedimentos|length }} procedimentos</small>
+          </a>
+        {% endfor %}
+      </div>
+    </aside>
+
+    <section class="content-panel" data-content-panel>
+      {% if active_especialidade %}
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Especialidade</span>
+            <h2>{{ active_especialidade.nome }}</h2>
+          </div>
+          <p>{{ active_especialidade.descricao }}</p>
+        </div>
+        <div class="procedure-grid">
+          {% for procedimento in procedimentos %}
+            <a class="procedure-card" href="{{ url_for('procedimento', procedimento_id=procedimento.id) }}">
+              <span class="card-label">Procedimento 0{{ loop.index }}</span>
+              <h3>{{ procedimento.nome }}</h3>
+              <p>{{ procedimento.resumo }}</p>
+              <span class="card-action">Ver orientações</span>
+            </a>
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Portal Infodonto</span>
+            <h2>Especialidades disponíveis</h2>
+          </div>
+          <p>Use a navegação para filtrar os procedimentos e abrir as recomendações específicas.</p>
+        </div>
+        <div class="specialty-grid">
+          {% for especialidade in especialidades %}
+            <a class="specialty-card" href="{{ url_for('especialidade', especialidade_id=especialidade.id) }}">
+              <span class="card-label">Especialidade 0{{ loop.index }}</span>
+              <h3>{{ especialidade.nome }}</h3>
+              <p>{{ especialidade.descricao }}</p>
+              <span class="card-action">{{ especialidade.procedimentos|length }} procedimentos</span>
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </section>
+
+  </div>
+</main>
+
+<button class="assistant-button" type="button" data-chat-open>
+  Assistente Virtual
+</button>
+
+<dialog class="chat-dialog" data-chat-dialog>
+  <div class="chat-box">
+    <div class="chat-head">
+      <strong>Assistente Virtual</strong>
+      <button type="button" aria-label="Fechar" data-chat-close>×</button>
+    </div>
+    <div class="chat-messages" data-chat-messages>
+      <div class="chat-message assistant">
+        Tire duvidas gerais sobre odontologia, cuidados, recuperacao e sinais de alerta.
+      </div>
+    </div>
+    <div class="chat-form-wrap">
+      <label class="sr-only" for="chat-message">Mensagem</label>
+      <textarea id="chat-message" data-chat-input rows="2" placeholder="Digite sua dúvida..."></textarea>
+      <button type="button" data-chat-send>Enviar</button>
+    </div>
+    <p class="chat-disclaimer">O assistente não substitui avaliação profissional.</p>
+  </div>
+</dialog>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
