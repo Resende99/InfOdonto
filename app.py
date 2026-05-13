@@ -118,8 +118,9 @@ def call_groq(pergunta, contexto):
         return {
             "status": "missing_api_key",
             "message": (
-                "O chat já está pronto para usar a Groq. Configure a variável "
-                "GROQ_API_KEY no arquivo .env e reinicie o Flask para ativar a IA."
+                "O assistente virtual está temporariamente indisponível. "
+                "Consulte as orientações da página e procure atendimento odontológico "
+                "se houver dor intensa, febre, sangramento persistente, pus ou piora dos sintomas."
             ),
         }
 
@@ -172,23 +173,36 @@ def call_groq(pergunta, contexto):
         detail_lower = detail.lower()
         if "incorrect api key" in detail_lower or "invalid api key" in detail_lower:
             return {
-                "status": "api_error",
-                "message": "A chave da API Groq no arquivo .env está inválida. Gere uma nova chave no console da Groq, atualize GROQ_API_KEY e reinicie o servidor.",
+                "status": "invalid_api_key",
+                "message": (
+                    "O assistente virtual está temporariamente indisponível. "
+                    "Consulte as orientações da página e procure atendimento odontológico "
+                    "se houver sinal de alerta."
+                ),
             }
         if "model" in detail_lower and ("not found" in detail_lower or "invalid" in detail_lower):
             return {
-                "status": "api_error",
-                "message": "O modelo configurado em GROQ_MODEL não foi aceito pela API Groq. Verifique o nome do modelo no console da Groq e reinicie o servidor.",
+                "status": "invalid_model",
+                "message": (
+                    "O assistente virtual está temporariamente indisponível. "
+                    "As orientações do procedimento continuam disponíveis nesta página."
+                ),
             }
         return {
             "status": "api_error",
-            "message": "Não consegui consultar a Groq agora. Verifique a chave, o modelo configurado e tente novamente.",
+            "message": (
+                "O assistente virtual não conseguiu responder agora. "
+                "Tente novamente em instantes ou consulte as orientações do procedimento."
+            ),
         }
     except urllib.error.URLError as exc:
         app.logger.warning("Erro de conexão com a API Groq: %s", exc)
         return {
             "status": "api_error",
-            "message": "Não consegui conectar à API da Groq agora. Confira sua internet e tente novamente.",
+            "message": (
+                "O assistente virtual não conseguiu responder agora. "
+                "Verifique sua conexão e tente novamente."
+            ),
         }
 
     answer = (
@@ -201,7 +215,7 @@ def call_groq(pergunta, contexto):
     if not answer:
         return {
             "status": "empty_response",
-            "message": "A Groq não retornou uma resposta utilizável. Tente reformular a pergunta.",
+            "message": "Não consegui formular uma resposta agora. Tente escrever sua dúvida de outro jeito.",
         }
 
     return {"status": "ok", "message": answer}
